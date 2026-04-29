@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow, noarchive"><!-- REMOVE before launch on navly.co -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Privacy Policy — Navly</title>
+<style>
+  :root { --ink:#0E1A17; --forest:#143A2E; --moss:#2F6B52; --signal:#D4F25C; --bone:#F4F1EA; --paper:#FBFAF6; --graphite:#3A4240; --hairline:#E2E0D8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Georgia',serif; background:var(--paper); color:var(--ink); line-height:1.75; padding:2rem 1rem 5rem; }
+  .wrap { max-width:720px; margin:0 auto; }
+  nav { display:flex; align-items:center; justify-content:space-between; margin-bottom:3rem; }
+  .wordmark { font-family:'Arial',sans-serif; font-weight:900; font-size:1.3rem; text-decoration:none; color:var(--ink); letter-spacing:-0.03em; }
+  .wordmark span { color:var(--moss); }
+  nav a.back { font-family:'Arial',sans-serif; font-size:0.85rem; color:var(--graphite); text-decoration:none; }
+  h1 { font-family:'Arial',sans-serif; font-size:2rem; font-weight:900; letter-spacing:-0.02em; margin-bottom:0.5rem; }
+  .meta { font-family:'Arial',sans-serif; font-size:0.82rem; color:var(--graphite); margin-bottom:2.5rem; padding-bottom:1.5rem; border-bottom:1px solid var(--hairline); }
+  h2 { font-family:'Arial',sans-serif; font-size:1rem; font-weight:700; margin:2rem 0 0.5rem; color:var(--forest); }
+  p { margin-bottom:0.9rem; font-size:0.97rem; }
+  ul, ol { margin:0.4rem 0 0.9rem 1.4rem; font-size:0.97rem; }
+  li { margin-bottom:0.3rem; }
+  table { width:100%; border-collapse:collapse; margin:0.75rem 0 1rem; font-size:0.88rem; }
+  th { background:var(--forest); color:var(--bone); padding:0.45rem 0.7rem; text-align:left; font-family:'Arial',sans-serif; font-size:0.78rem; }
+  td { padding:0.45rem 0.7rem; border-bottom:1px solid var(--hairline); vertical-align:top; }
+  tr:nth-child(even) td { background:#f6f5f0; }
+  footer { margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--hairline); font-family:'Arial',sans-serif; font-size:0.8rem; color:var(--graphite); display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; }
+  footer a { color:var(--moss); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="wordmark" href="/">Navly<span>.</span></a>
+    <a class="back" href="/">← Back to navly.co</a>
+  </nav>
+
+  <h1>Privacy Policy</h1>
+  <div class="meta">
+    Navly Ltd · Company No: <strong>[COMPANY NUMBER]</strong> · ICO Reg: <strong>[ICO REG NUMBER]</strong><br>
+    Last updated: <strong>[DATE]</strong> · Questions: <a href="mailto:privacy@navly.co">privacy@navly.co</a>
+  </div>
+
+  <h2>1. Who We Are</h2>
+  <p>Navly Ltd is the data controller for personal data processed through the Navly app and website at navly.co. We are registered with the Information Commissioner's Office (ICO Registration No: [ICO REG NUMBER]). To contact us about your data: <a href="mailto:privacy@navly.co">privacy@navly.co</a>.</p>
+
+  <h2>2. What We Collect and Why</h2>
+  <table>
+    <tr><th>Data</th><th>Purpose</th><th>Legal Basis</th></tr>
+    <tr><td>Name, email address</td><td>Account creation and communication</td><td>Contract (Art. 6(1)(b))</td></tr>
+    <tr><td>In-lesson audio recordings</td><td>Transcription and DVSA competency analysis</td><td>Explicit consent (Art. 9(2)(a)) — per session</td></tr>
+    <tr><td>Lesson transcripts</td><td>Competency mapping, readiness scoring, lesson summaries</td><td>Contract (Art. 6(1)(b))</td></tr>
+    <tr><td>DVSA competency scores</td><td>Progress tracking — core service</td><td>Contract (Art. 6(1)(b))</td></tr>
+    <tr><td>Device type, app usage logs</td><td>App performance and bug fixing</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+    <tr><td>Payment data</td><td>Subscription billing via Stripe (we never store card numbers)</td><td>Contract (Art. 6(1)(b))</td></tr>
+  </table>
+
+  <h2>3. Audio Recording — Special Category Data</h2>
+  <p>Driving lesson recordings may capture voices of both the learner and their ADI. This is special category data under UK GDPR Article 9. We process it only on the basis of explicit per-session consent.</p>
+  <p><strong>Before every recording</strong>, the app shows a full-screen consent prompt. You confirm your instructor has agreed. Their verbal consent is logged with a timestamp. You can withdraw consent at any time by deleting the lesson — audio is permanently removed within 30 days.</p>
+  <p><strong>Under-18 learners:</strong> Under DPA 2018 Section 9, the consent age for information society services is 13. Learner drivers aged 17 (UK minimum driving age) can lawfully self-consent. We do not knowingly collect data from anyone under 13.</p>
+
+  <h2>4. How We Store Your Data</h2>
+  <p>Audio is processed on-device by default. Where cloud sync is enabled, all data is encrypted in transit (TLS 1.2+) and at rest (AES-256). Audio files are automatically deleted from our servers within 30 days of upload. Transcripts and competency data are stored in Supabase (EU region) until you delete your account. We do not sell your data or use recordings to train AI models without separate explicit consent.</p>
+
+  <h2>5. Who We Share Data With</h2>
+  <ul>
+    <li><strong>Anthropic (Claude API)</strong> — AI analysis of transcripts. Zero data retention policy applies to our API tier.</li>
+    <li><strong>Supabase</strong> — Database and authentication (EU servers).</li>
+    <li><strong>Stripe</strong> — Payment processing only.</li>
+    <li><strong>Apple / Google</strong> — App distribution only.</li>
+  </ul>
+  <p>We never share your data with your ADI, driving school, or any third party for marketing purposes without your explicit consent.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>Under UK GDPR you have the right to access, correct, delete, restrict, or port your data, and to object to processing. Email <a href="mailto:privacy@navly.co">privacy@navly.co</a> — we respond within 30 days. You also have the right to complain to the ICO at <a href="https://ico.org.uk" target="_blank">ico.org.uk</a> or 0303 123 1113.</p>
+
+  <h2>7. Retention</h2>
+  <ul>
+    <li>Audio recordings: deleted from servers within 30 days of upload</li>
+    <li>Transcripts and lesson data: until account deletion</li>
+    <li>Account data: deleted within 30 days of account closure</li>
+    <li>Financial records: 7 years (legal requirement)</li>
+    <li>Consent logs: 3 years from session date (ICO compliance)</li>
+  </ul>
+
+  <h2>8. Cookies</h2>
+  <p>The Navly app uses only essential authentication cookies. The navly.co website uses analytics cookies — you will be asked for consent. No advertising or tracking cookies are set.</p>
+
+  <h2>9. Changes</h2>
+  <p>We will notify users of material changes via in-app notification and email at least 14 days before they take effect.</p>
+
+  <footer>
+    <span>© 2026 Navly Ltd · Company [COMPANY NUMBER]</span>
+    <span><a href="/terms.html">Terms of Service</a> · <a href="mailto:privacy@navly.co">privacy@navly.co</a></span>
+  </footer>
+</div>
+</body>
+</html>
