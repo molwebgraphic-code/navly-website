@@ -331,10 +331,12 @@
   .trial-body strong{color:var(--bone)}
   .trial-cta{flex-shrink:0;background:var(--signal);color:var(--ink);font-family:'Inter Tight',sans-serif;font-weight:700;font-size:14px;letter-spacing:-0.01em;padding:12px 22px;border-radius:10px;text-decoration:none;white-space:nowrap;transition:transform .15s ease}
   .trial-cta:hover{transform:translateY(-1px)}
-  /* Discount badge */
-  .badge-wrap{position:absolute;top:-13px;left:36px}
-  .discount-badge{background:var(--signal);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:5px 14px;border-radius:20px}
-  /* Hide "Most popular" pseudo since we use badge-wrap now */
+  /* Discount badge — full-width strip pinned to top of Annual card */
+  .badge-wrap{position:absolute;top:0;left:0;right:0}
+  .discount-badge{display:block;width:100%;background:var(--signal);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;padding:9px 16px;text-align:center;border-radius:16px 16px 0 0}
+  /* Push card content below the badge strip */
+  .price-card.hero{padding-top:72px}
+  /* Hide old "Most popular" pseudo — replaced by badge-wrap */
   .price-card.hero::before{display:none}
 
   /* ============ FAQ ============ */
