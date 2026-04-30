@@ -549,6 +549,26 @@
     footer .wrap{grid-template-columns:1fr;gap:28px}
     footer .brand{grid-column:auto}
   }
+
+  /* ── Laptop fix: wide screen, short viewport (MacBook etc.) ──
+     Targets screens wider than 1100px but shorter than 920px in CSS height.
+     Shrinks hero padding + phone so everything sits above the fold.
+     Does NOT touch mobile (< 780px) or large desktop monitors (> 920px tall). */
+  @media (min-width:1101px) and (max-height:920px){
+    .hero{padding:52px 48px 56px}
+    .hero .eyebrow{margin-bottom:20px}
+    .hero h1{font-size:clamp(36px,4.6vw,72px);margin:0 0 18px}
+    .hero .sub{font-size:18px;line-height:1.35;margin:0 0 28px}
+    .hero .trust{margin-top:20px}
+    .hero-grid{gap:56px}
+    /* Shrink phone so its height fits the reduced hero */
+    .phone{width:240px;border-radius:40px;padding:8px}
+    .phone::before{width:82px;height:22px;top:11px;border-radius:14px}
+    .phone .screen{border-radius:33px}
+    /* Tighten the home screen content inside the smaller phone */
+    .s-home{padding:50px 12px 14px;gap:10px}
+    .s-home .readiness .big{font-size:44px}
+  }
 </style>
 </head>
 <body>
